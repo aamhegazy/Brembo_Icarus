@@ -11,7 +11,8 @@ public class PedalsManager : MonoBehaviour
     [SerializeField]
     private float speedIncrement = 0.2f;
 
-
+    [SerializeField]
+    private Transform brakingGuide;
 
 
     [SerializeField]
@@ -26,7 +27,8 @@ public class PedalsManager : MonoBehaviour
         isBraking = false;
         speed = 0;
         displayedSpeed.text = speed.ToString();
-        
+        var oldPos = brakingGuide.localPosition;
+        brakingGuide.localPosition = new Vector3(oldPos.x, oldPos.y, - 50f);
     }
 
     // Update is called once per frame
@@ -83,6 +85,10 @@ public class PedalsManager : MonoBehaviour
         }
         
         displayedSpeed.text = Math.Round(speed).ToString();
+
+
+        var oldPos = brakingGuide.localPosition;
+        brakingGuide.localPosition = new Vector3(oldPos.x, oldPos.y, speed/3.0f-50f);
 
     }
 
