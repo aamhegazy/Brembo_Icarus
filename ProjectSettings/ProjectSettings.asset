@@ -141,6 +141,13 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: -6178616122310734371, guid: 802969570af980a468b40cf8335e6756, type: 2}
   - {fileID: 326351014562190018, guid: be68ed7394353854db851cf22870619d, type: 2}
   - {fileID: -466371058322512200, guid: f58738ce0c2ed654fb2a2eaccde24633, type: 2}
@@ -502,9 +509,7 @@ PlayerSettings:
   switchPlayerConnectionEnabled: 1
   switchUseNewStyleFilepaths: 0
   switchUseMicroSleepForYield: 1
-  switchEnableRamDiskSupport: 0
   switchMicroSleepForYieldTime: 25
-  switchRamDiskSpaceSize: 12
   ps4NPAgeRating: 12
   ps4NPTitleSecret: 
   ps4NPTrophyPackPath: 

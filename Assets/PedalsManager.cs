@@ -39,15 +39,15 @@ public class PedalsManager : MonoBehaviour
         {
             if (speed <= 50)
             {
-                speedIncrement = 0.2f;
+                speedIncrement = 0.2f * 4;
             }
             else if (speed > 50 && speed <= 100)
             {
-                speedIncrement = 0.1f;
+                speedIncrement = 0.1f * 4;
             }
             else if (speed > 100 && speed <= 150)
             {
-                speedIncrement = 0.1f;
+                speedIncrement = 0.05f * 4;
             }
             else
             {
@@ -62,15 +62,15 @@ public class PedalsManager : MonoBehaviour
             }
             else if (speed > 0 && speed <= 100)
             {
-                speedIncrement = 0.2f;
+                speedIncrement = 0.2f * 4;
             }
             else if (speed > 100 && speed <= 150)
             {
-                speedIncrement = 0.1f;
+                speedIncrement = 0.1f*4;
             }
             else
             {
-                speedIncrement = 0.05f;
+                speedIncrement = 0.05f*4;
             }
         }
         
